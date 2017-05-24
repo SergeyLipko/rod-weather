@@ -1,0 +1,21 @@
+.forecast-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 15px;
+    background-color: currentColor;
+}
+
+.forecast-list-item {
+    margin: 20px 20px;
+}
+
+.select-module {
+    width: 400px;
+    margin: 25px auto;
+}
+
+.my-select {
+    z-index: 500;
+}

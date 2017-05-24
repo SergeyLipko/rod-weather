@@ -1,0 +1,41 @@
+:root {
+    --app-container-width: 1200px;
+    --app-container-height: 400px;
+    --border-color: #e0e0e0;
+}
+
+.navigation-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #fff;
+}
+
+.app-navigation-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navigation-link {
+    padding: 0 20px;
+}
+
+.app-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.app-content-wrapper {
+    width: var(--app-container-width);
+    min-height: var(--app-container-height);
+    margin: 100px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}

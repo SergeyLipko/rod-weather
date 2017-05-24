@@ -1,0 +1,55 @@
+:root {
+    --day-with: 250px;
+}
+
+.day-name,
+.day-main,
+.day-params li,
+.temperature-list li{
+    color: #fff;
+}
+
+.day-wrapper {
+    width: var(--day-with);
+    padding: 15px 0;
+    border-radius: 6px;
+    border: 1px solid #fff;
+}
+
+.day-top-content {
+    margin-bottom: 15px;
+}
+
+.day-icon-wrapper {
+    margin-bottom: 10px;
+}
+
+.temperature-list {
+    margin-bottom: 15px;
+}
+
+.day-params,
+.temperature-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+}
+
+.day-bottom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+

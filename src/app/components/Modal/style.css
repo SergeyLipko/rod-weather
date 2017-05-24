@@ -1,0 +1,81 @@
+:root {
+    --input-width: 300px;
+    --input-height: 45px;
+}
+
+.modal-open,
+.modal-hidden {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    width: 100%;
+    height: 100vh;
+}
+
+.modal-open {
+    display: block;
+}
+
+.modal-hidden {
+    display: none;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.modal-form-wrapper {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1600;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form input[type="text"],
+.form input[type="submit"],
+.form input[type="number"] {
+    width: var(--input-width);
+    height: var(--input-height);
+    font-size: 15px;
+}
+
+.form input[type="text"],
+.form input[type="number"]{
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border: 1px solid #adadad;
+}
+
+.form input[type="submit"] {
+    cursor: pointer;
+    color: #fff;
+    background-color: #00d1b2;
+    outline: none;
+}
+
+.form input[type="submit"] {
+    border: 0;
+}
+
+.form input:nth-child(even) {
+    margin-bottom: 25px;
+}
